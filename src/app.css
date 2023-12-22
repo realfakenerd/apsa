@@ -1,0 +1,19 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	@apply h-full overflow-hidden;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+	font-style: italic;
+	background-repeat: no-repeat;
+	background-size: cover;
+	shape-margin: 1rem;
+}
