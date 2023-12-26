@@ -1,13 +1,16 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import { Sidebar, Topbar } from '$lib/components';
-	import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
-	import { AppShell, LightSwitch, initializeStores, storePopup } from '@skeletonlabs/skeleton';
-	import '../app.css';
+	import { Topbar } from '$lib/components';
 	import Footer from '$lib/components/Footer.svelte';
+	import { arrow, autoUpdate, computePosition, flip, offset, shift } from '@floating-ui/dom';
+	import { AppShell, initializeStores, storePopup } from '@skeletonlabs/skeleton';
+	import '../app.css';
+	import { enableCache } from '@iconify/svelte';
 
 	storePopup.set({ computePosition, autoUpdate, offset, shift, flip, arrow });
 
+	// 12/01 16 19h auditorio
+	enableCache('local')
 	initializeStores();
 	function matchPathWhitelist(pageUrlPath: string): boolean {
 		// If homepage route

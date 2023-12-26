@@ -51,6 +51,24 @@
 		'muito-mais.png'
 	];
 
+	const listaServicos = [
+		{ src: 'seguranca_1', alt: 'Segurança' },
+		{ src: 'conveniencia_1_1', alt: 'Conveniência' },
+		{ src: 'transparencia_0_1', alt: 'Transparência' },
+		{ src: 'agilidade_0_1', alt: 'Agilidade' },
+		{ src: 'comodidade_0_1', alt: 'Comodidade' },
+		{ src: 'comodidade_0_1', alt: 'Aplicativo' }
+	];
+
+	const listaServicosAdicionais = [
+		{ src: 'debito-facil_0_0', alt: 'Débito fácil' },
+		{ src: 'perfil-certo_0_0', alt: 'Perfil certo' },
+		{ src: 'assessoria-em-assembleias_0_0', alt: 'Assessorias em assembleias' },
+		{ src: 'apsa-med_0_0', alt: 'APSA med' },
+		{ src: 'securitizacao_0_0', alt: 'Securitização dos créditos condominiais' },
+		{ src: 'credito-data-pagamento_0', alt: 'Crédito na data do pagamento' }
+	];
+
 	let interBubble: HTMLDivElement;
 	onMount(() => {
 		let curX = 0;
@@ -88,9 +106,11 @@
 		<figure>
 			<img
 				class="w-full"
-				width="380px"
+				style="height: 377px;"
+				width="518px"
+				height="377px"
 				src="https://apsa.com.br/sites/default/files/2019-03/gestaocondominial_bg_outline.png"
-				alt="pessoas com cachorro" />
+				alt="cara sentado" />
 		</figure>
 	</div>
 	<div class="inline-flex w-full justify-center">
@@ -112,13 +132,15 @@
 </section>
 
 <section class="flex flex-col items-center gap-8 p-4">
-	<h2 class="h2 text-center font-bold">
+	<h2 class="h2 font-bold">
 		Na Apsa você tem os melhores serviços, de acordo com o seu perfil, pelos menores custos.
 	</h2>
 	<ul class="flex max-w-4xl flex-wrap justify-center gap-8">
 		{#each fotosServicos as src}
 			<li>
 				<img
+					loading="lazy"
+					decoding="async"
 					width="120px"
 					height="82px"
 					src="https://apsa.com.br/themes/apsa/img/icone-{src}"
@@ -127,6 +149,7 @@
 		{/each}
 	</ul>
 </section>
+
 <section>
 	<div class="gradient-bg">
 		<div
@@ -161,10 +184,37 @@
 </section>
 
 <section class="flex flex-col gap-4 p-10">
-	<h1 class="h1 font-medium text-center">Tranquilidade para sindicos e condôminos</h1>
-	<hr class="!border-secondary-400-500-token border-2"/>
+	<h1 class="h1 text-center font-medium">Tranquilidade para sindicos e condôminos</h1>
+	<hr class="!border-secondary-400-500-token border-2" />
 
-	<div class="grid grid-cols-3"></div>
+	<ul class="grid grid-cols-3 place-items-center gap-3 font-medium">
+		{#each listaServicos as { alt, src }}
+			<li class="flex flex-col items-center">
+				<img
+					loading="lazy"
+					width="110"
+					height="110"
+					src="https://apsa.com.br/themes/apsa/img/icone-{src}.png"
+					alt="icone segurança" />
+				<p>{alt}</p>
+			</li>
+		{/each}
+	</ul>
+</section>
+<section class="flex flex-col gap-4 p-10">
+	<h1 class="h1 text-center font-medium">Serviços adicionais</h1>
+	<hr class="!border-secondary-400-500-token border-2" />
+
+	<ul class="grid grid-cols-3 place-items-center gap-3 font-medium">
+		{#each listaServicosAdicionais as { alt, src }}
+			<li class="flex flex-col items-center">
+				<img
+					src="https://apsa.com.br/sites/default/files/inline-images/icone-{src}.png"
+					alt="icone segurança" />
+				<p>{alt}</p>
+			</li>
+		{/each}
+	</ul>
 </section>
 
 <style lang="postcss">

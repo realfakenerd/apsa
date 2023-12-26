@@ -35,6 +35,7 @@
 			<img
 				class="w-full"
 				width="380px"
+				height="518px"
 				src="https://apsa.com.br/sites/default/files/2019-03/apsa_bg_outline.png"
 				alt="pessoas com cachorro" />
 		</figure>

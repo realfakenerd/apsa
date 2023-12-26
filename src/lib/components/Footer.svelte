@@ -40,12 +40,12 @@
 			</div>
 
 			<form>
-				<h3 class="h3 text-secondary-400-500-token">Newsletter</h3>
+				<h3 class="text-secondary-400-500-token h3">Newsletter</h3>
 				<label class="label">
 					<span>Receba as notícias atualizadas sobre o mundo imobiliário.</span>
 					<div class="input-group input-group-divider grid-cols-[auto_1fr_auto]">
 						<input type="email" placeholder="email@apsa.com.br" />
-						<div class="inline-flex !justify-center variant-filled-secondary">Cadastrar</div>
+						<div class="variant-filled-secondary inline-flex !justify-center">Cadastrar</div>
 					</div>
 				</label>
 			</form>
@@ -55,11 +55,13 @@
 		<section class={cRowOne}>
 			<div class="hidden w-full justify-between gap-8 md:flex">
 				<div class="space-y-6">
-					<h3 class="h3 text-secondary-400-500-token">Certificações</h3>
+					<h3 class="text-secondary-400-500-token h3">Certificações</h3>
 					<ul class="flex flex-row gap-3">
 						<li>
 							<figure class="w-20">
 								<img
+									loading="lazy"
+									decoding="async"
 									width="80px"
 									src="https://apsa.com.br/sites/default/files/inline-images/SeloGPTW2324_0.png"
 									alt="Selo GPTW" />
@@ -68,6 +70,8 @@
 						<li>
 							<figure class="w-20">
 								<img
+									loading="lazy"
+									decoding="async"
 									width="80px"
 									src="https://apsa.com.br/sites/default/files/inline-images/procondo-certificado.png"
 									alt="Selo Procondo" />
@@ -76,6 +80,8 @@
 						<li>
 							<figure class="w-20">
 								<img
+									loading="lazy"
+									decoding="async"
 									width="80px"
 									src="https://apsa.com.br/sites/default/files/inline-images/irem-certificado.jpg"
 									alt="Selo Irem" />
@@ -84,6 +90,8 @@
 						<li>
 							<figure class="w-20">
 								<img
+									loading="lazy"
+									decoding="async"
 									width="80px"
 									src="https://apsa.com.br/sites/default/files/inline-images/Sistema_Certificado_ISO_9001__Azul_1.jpg"
 									alt="Selo ISO-9001" />
@@ -98,7 +106,7 @@
 				</div>
 				<div class="flex gap-8">
 					<div class="space-y-6">
-						<h3 class="h3 text-secondary-400-500-token">A APSA</h3>
+						<h3 class="text-secondary-400-500-token h3">A APSA</h3>
 						<ul class="grid grid-cols-2 gap-3">
 							<li><a class="anchor" href="/sobre/quem-somos">Quem Somos</a></li>
 							<li><a class="anchor" href="/sobre/onde-estamos">Onde Estamos</a></li>
@@ -114,7 +122,7 @@
 						</ul>
 					</div>
 					<div class="space-y-6">
-						<h3 class="h3 text-secondary-400-500-token">Navegue</h3>
+						<h3 class="text-secondary-400-500-token h3">Navegue</h3>
 						<ul class="flex flex-col gap-y-6">
 							<li>
 								<a class="anchor" href="/gestao-condominial">Gestão Condominial</a>
