@@ -45,7 +45,7 @@
 			<a href="/condominio"><span>Gestão Condomínial</span></a>
 			<a href="/locacao"><span>Aluguel</span></a>
 			<a href="/compra-venda"><span>Compra & Venda</span></a>
-			<a href="/seguro"><span>Seguros</span></a>
+			<a href="/seguros"><span>Seguros</span></a>
 			<a href="/construtora"><span>Construtoras</span></a>
 		</div>
 	</div>
@@ -103,8 +103,9 @@
 		<img
 			class="h-auto w-[350px] max-w-full"
 			width="350"
+			loading="lazy"
 			src="https://apsa.com.br/themes/apsa/img/mockup-galaxy-s10-only_0.png"
-			alt="" />
+			alt="aplicativo apsa" />
 
 		<ul class="flex flex-col justify-evenly">
 			{#each appServicos as appServico}
