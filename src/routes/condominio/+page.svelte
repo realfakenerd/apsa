@@ -217,8 +217,8 @@
 	</ul>
 </section>
 
-<style lang="postcss">
-	:global(:root) {
+<style>
+	:root {
 		--color1: 18, 113, 255;
 		--color2: 221, 74, 255;
 		--color3: 100, 220, 255;
@@ -270,7 +270,7 @@
 		height: 100dvh;
 		position: relative;
 		overflow: hidden;
-		background: linear-gradient(40deg, theme(colors.secondary.500), theme(colors.secondary.400));
+		background: linear-gradient(40deg, red, wheat);
 		top: 0;
 		left: 0;
 	}
@@ -289,16 +289,16 @@
 		position: absolute;
 		background: radial-gradient(
 				circle at center,
-				rgba(theme(colors.primary.500), 0.8) 0,
-				rgba(theme(colors.primary.500), 0) 50%
+				rgba(var(--color1), 0.8) 0,
+				rgba(var(--color1), 0) 50%
 			)
 			no-repeat;
 		mix-blend-mode: var(--blending);
 
-		width: var(--circle-size);
-		height: var(--circle-size);
-		top: calc(50% - var(--circle-size) / 2);
-		left: calc(50% - var(--circle-size) / 2);
+		width: 80%;
+		height: 80%;
+		top: calc(50% - 80% / 2);
+		left: calc(50% - 80% / 2);
 
 		transform-origin: center center;
 		animation: moveVertical 30s ease infinite;
@@ -310,16 +310,16 @@
 		position: absolute;
 		background: radial-gradient(
 				circle at center,
-				rgba(theme(colors.tertiary.500), 0.8) 0,
-				rgba(theme(colors.tertiary.500), 0) 50%
+				rgba(var(--color2), 0.8) 0,
+				rgba(var(--color2), 0) 50%
 			)
 			no-repeat;
 		mix-blend-mode: var(--blending);
 
-		width: var(--circle-size);
-		height: var(--circle-size);
-		top: calc(50% - var(--circle-size) / 2);
-		left: calc(50% - var(--circle-size) / 2);
+		width: 80%;
+		height: 80%;
+		top: calc(50% - 80% / 2);
+		left: calc(50% - 80% / 2);
 
 		transform-origin: calc(50% - 400px);
 		animation: moveInCircle 20s reverse infinite;
@@ -331,16 +331,16 @@
 		position: absolute;
 		background: radial-gradient(
 				circle at center,
-				rgba(theme(colors.secondary.100), 0.8) 0,
-				rgba(theme(colors.secondary.100), 0) 50%
+				rgba(var(--color3), 0.8) 0,
+				rgba(var(--color3), 0) 50%
 			)
 			no-repeat;
 		mix-blend-mode: var(--blending);
 
-		width: var(--circle-size);
-		height: var(--circle-size);
-		top: calc(50% - var(--circle-size) / 2 + 200px);
-		left: calc(50% - var(--circle-size) / 2 - 500px);
+		width: 80%;
+		height: 80%;
+		top: calc(50% - 80% / 2 + 200px);
+		left: calc(50% - 80% / 2 - 500px);
 
 		transform-origin: calc(50% + 400px);
 		animation: moveInCircle 40s linear infinite;
@@ -358,10 +358,10 @@
 			no-repeat;
 		mix-blend-mode: var(--blending);
 
-		width: var(--circle-size);
-		height: var(--circle-size);
-		top: calc(50% - var(--circle-size) / 2);
-		left: calc(50% - var(--circle-size) / 2);
+		width: 80%;
+		height: 80%;
+		top: calc(50% - 80% / 2);
+		left: calc(50% - 80% / 2);
 
 		transform-origin: calc(50% - 200px);
 		animation: moveHorizontal 40s ease infinite;
@@ -379,10 +379,10 @@
 			no-repeat;
 		mix-blend-mode: var(--blending);
 
-		width: calc(var(--circle-size) * 2);
-		height: calc(var(--circle-size) * 2);
-		top: calc(50% - var(--circle-size));
-		left: calc(50% - var(--circle-size));
+		width: calc(80% * 2);
+		height: calc(80% * 2);
+		top: calc(50% - 80%);
+		left: calc(50% - 80%);
 
 		transform-origin: calc(50% - 800px) calc(50% + 200px);
 		animation: moveInCircle 20s ease infinite;
