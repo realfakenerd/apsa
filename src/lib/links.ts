@@ -20,8 +20,8 @@ export default [
 		icon: 'mdi:shield-home'
 	},
 	{
-		href: '/construtora',
-		name: 'Construtora',
+		href: '/construtoras',
+		name: 'Construtoras',
 		icon: 'mdi:account-hard-hat-outline'
 	}
 ];

@@ -71,9 +71,7 @@
 					{#each links as { href, icon, name }}
 						<li>
 							<a {href}>
-								<span class="w-6 text-center">
-									<Icon {icon} />
-								</span>
+								<Icon {icon} />
 								<span>{name}</span>
 							</a>
 						</li>
@@ -93,14 +91,14 @@
 		</div>
 
 		<!-- Social -->
-		<section class="hidden gap-x-1 sm:inline-flex">
+		<section class="hidden gap-x-2 sm:inline-flex">
 			<a
 				use:popup={{ event: 'hover', target: 'boleto', placement: 'bottom' }}
-				class="btn-icon hover:variant-soft-primary [&>*]:pointer-events-none"
+				class="btn text-white variant-filled-primary p-2 rounded-full [&>*]:pointer-events-none"
 				href="https://github.com/skeletonlabs/skeleton"
 				target="_blank"
 				rel="noreferrer">
-				<Icon icon="mdi:file-outline" class="text-lg" />
+				<Icon icon="mdi:file-outline" />
 			</a>
 			<div class="card w-60 p-4" data-popup="boleto">
 				<div class="inline-flex w-full items-center justify-between">
@@ -110,11 +108,11 @@
 			</div>
 			<a
 				use:popup={{ event: 'hover', target: 'areacliente', placement: 'bottom' }}
-				class="btn-icon hover:variant-soft-primary [&>*]:pointer-events-none"
+				class="btn text-white variant-filled-primary p-2 rounded-full [&>*]:pointer-events-none"
 				href="https://discord.gg/EXqV7W8MtY"
 				target="_blank"
 				rel="noreferrer">
-				<Icon icon="mdi:domain" class="text-lg" />
+				<Icon icon="mdi:domain" />
 			</a>
 			<div class="card w-60 p-4" data-popup="areacliente">
 				<div class="inline-flex w-full items-center justify-between">

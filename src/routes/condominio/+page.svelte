@@ -70,22 +70,20 @@
 	];
 
 	let interBubble: HTMLDivElement;
-	onMount(() => {
-		let curX = 0;
-		let curY = 0;
-		let tgX = 0;
-		let tgY = 0;
+	let curX = 0;
+	let curY = 0;
+	let tgX = 0;
+	let tgY = 0;
 
+	onMount(() => {
 		function move() {
 			curX += (tgX - curX) / 20;
 			curY += (tgY - curY) / 20;
 			interBubble.style.transform = `translate(${Math.round(curX)}px, ${Math.round(curY)}px)`;
-			requestAnimationFrame(() => {
-				move();
-			});
+			requestAnimationFrame(move);
 		}
 
-		window.addEventListener('mousemove', (event) => {
+		addEventListener('mousemove', (event) => {
 			tgX = event.clientX;
 			tgY = event.clientY;
 		});
@@ -93,6 +91,10 @@
 		move();
 	});
 </script>
+
+<svelte:head>
+	<title>APSA - Condomínios</title>
+</svelte:head>
 
 <section
 	class="flex min-h-[80dvh] flex-col bg-gradient-to-tr from-secondary-600 to-secondary-200 p-10">

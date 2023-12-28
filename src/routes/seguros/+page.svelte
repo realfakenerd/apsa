@@ -2,6 +2,10 @@
 	import Icon from '@iconify/svelte';
 </script>
 
+<svelte:head>
+	<title>APSA - Seguros</title>
+</svelte:head>
+
 <section
 	class="flex min-h-[80dvh] flex-col bg-gradient-to-tr from-secondary-600 to-secondary-400 p-10">
 	<div class="flex flex-col items-center justify-center md:flex-row">

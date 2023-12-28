@@ -19,6 +19,10 @@
 	];
 </script>
 
+<svelte:head>
+	<title>APSA</title>
+</svelte:head>
+
 <section class="bg-gradient-to-tr from-primary-600 to-primary-400 flex min-h-[80dvh] flex-col p-10">
 	<div class="flex flex-col items-center justify-center md:flex-row">
 		<div class="flex w-1/2 flex-col gap-6">
