@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte';
+	import { LightSwitch } from '@skeletonlabs/skeleton';
 
 	// Base Classes
 	const cBase =
@@ -39,15 +40,20 @@
 				<p class="!text-sm opacity-80">Viver bem em propriedades Urbanas</p>
 			</div>
 
-			<form>
-				<h3 class="text-secondary-400-500-token h3">Newsletter</h3>
-				<label class="label">
-					<span>Receba as notícias atualizadas sobre o mundo imobiliário.</span>
-					<div class="input-group input-group-divider grid-cols-[auto_1fr_auto]">
-						<input type="email" placeholder="email@apsa.com.br" />
-						<div class="variant-filled-secondary inline-flex !justify-center">Cadastrar</div>
-					</div>
-				</label>
+			<form class="flex flex-row gap-2">
+				<div class="self-end">
+					<LightSwitch />
+				</div>
+				<fieldset>
+					<h3 class="text-secondary-400-500-token h3">Newsletter</h3>
+					<label class="label">
+						<span>Receba as notícias atualizadas sobre o mundo imobiliário.</span>
+						<div class="input-group input-group-divider grid-cols-[auto_1fr_auto]">
+							<input type="email" placeholder="email@apsa.com.br" />
+							<div class="variant-filled-secondary inline-flex !justify-center">Cadastrar</div>
+						</div>
+					</label>
+				</fieldset>
 			</form>
 		</section>
 

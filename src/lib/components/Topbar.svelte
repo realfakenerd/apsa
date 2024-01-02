@@ -3,7 +3,12 @@
 	import links from '$lib/links';
 	import Icon from '@iconify/svelte';
 	import type { DrawerSettings, ModalSettings } from '@skeletonlabs/skeleton';
-	import { AppBar, getDrawerStore, getModalStore, popup } from '@skeletonlabs/skeleton';
+	import {
+		AppBar,
+		getDrawerStore,
+		getModalStore,
+		popup
+	} from '@skeletonlabs/skeleton';
 	import { writable } from 'svelte/store';
 	const drawerStore = getDrawerStore();
 
@@ -94,7 +99,7 @@
 		<section class="hidden gap-x-2 sm:inline-flex">
 			<a
 				use:popup={{ event: 'hover', target: 'boleto', placement: 'bottom' }}
-				class="btn text-white variant-filled-primary p-2 rounded-full [&>*]:pointer-events-none"
+				class="variant-filled-primary btn rounded-full p-2 text-white [&>*]:pointer-events-none"
 				href="https://github.com/skeletonlabs/skeleton"
 				target="_blank"
 				rel="noreferrer">
@@ -108,7 +113,7 @@
 			</div>
 			<a
 				use:popup={{ event: 'hover', target: 'areacliente', placement: 'bottom' }}
-				class="btn text-white variant-filled-primary p-2 rounded-full [&>*]:pointer-events-none"
+				class="variant-filled-primary btn rounded-full p-2 text-white [&>*]:pointer-events-none"
 				href="https://discord.gg/EXqV7W8MtY"
 				target="_blank"
 				rel="noreferrer">
