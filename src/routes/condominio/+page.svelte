@@ -157,7 +157,7 @@
 		<div
 			class="absolute inset-y-1/2 right-1/2 z-50 flex w-full translate-x-1/2 flex-col items-center gap-6 px-10">
 			<h1 class="h1 text-white">Solicite hoje mesmo a sua proposta!</h1>
-			<a class="variant-filled-primary btn btn-lg" href="/condominio/contrate-agora">
+			<a class="variant-filled-primary text-white btn btn-lg" href="/condominio/contrate-agora">
 				<span>Contrate Agora</span>
 			</a>
 		</div>
